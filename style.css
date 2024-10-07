@@ -294,17 +294,7 @@ figcaption {
     font-size: 15px;
 }
 
-/* button {
 
-    position: absolute;
-    left: 730px;
-    width: 4pc;
-    height: 30px;
-    background-color: black;
-    color: white;
-    font-size: 14px;
-    box-shadow: white;
-} */
  .casual{
     display: flex;
     flex-direction: row;
@@ -319,7 +309,7 @@ span {
 .image-5 img,
 .image-7 img {
     width: 100%;
-    padding: 15px;
+    /* padding: 15px; */
 }
 
 .color .season img {
@@ -488,13 +478,13 @@ input[type="radio"] {
     /* font-weight: bold; */
 }
 
-/*  Make pagination more responsive  */
+ /* Make pagination more responsive 
 @media (max-width: 600px) {
     .pagination-controls label {
         padding: 8px 15px;
         font-size: 14px;
     }
-}  
+}   */
 
    
 .page{
@@ -593,36 +583,7 @@ img.rear-img-1 {
     right: 0;
   }
 
-  @media (max-width: 1200px) {
-    .slide-item {
-      flex: 0 0 20%;
-    }
-  }
-
-  @media (max-width: 992px) {
-    .slide-item {
-      flex: 0 0 25%;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .slide-item {
-      flex: 0 0 33.33%;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .slide-item {
-      flex: 0 0 50%;
-    }
-  }
-
-  @media (max-width: 400px) {
-    .slide-item {
-      flex: 0 0 100%;
-      
-    }
-  }
+  
  .end{
     margin: 20px;
  }
