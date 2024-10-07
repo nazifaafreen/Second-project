@@ -386,6 +386,7 @@ p {
 .men {
     display: flex;
     padding: 15px;
+    justify-content: space-around;
     gap: 7%;
     margin: 20px;
 }
@@ -478,13 +479,6 @@ input[type="radio"] {
     /* font-weight: bold; */
 }
 
- /* Make pagination more responsive 
-@media (max-width: 600px) {
-    .pagination-controls label {
-        padding: 8px 15px;
-        font-size: 14px;
-    }
-}   */
 
    
 .page{
