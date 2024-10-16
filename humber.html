@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        /* start nav */
+
+        /* Basic styling for the navigation */
+        nav {
+            background-color: #fff;
+            /* Background color */
+            width: 100%;
+            /* Full width */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow for depth */
+            position: relative;
+            /* Positioning context for dropdowns */
+        }
+
+        /* Container for navigation elements */
+        .container {
+            display: flex;
+            /* Flexbox for layout */
+            justify-content: space-between;
+            /* Space out elements */
+            align-items: center;
+            /* Center items vertically */
+            padding: 10px 20px;
+            /* Padding around the container */
+            height: 150px;
+        }
+
+        /* Flex container classes for logo, nav links, and icons */
+        .class1,
+        .class2,
+        .class3 {
+            display: flex;
+            /* Flexbox for alignment */
+            align-items: center;
+            /* Center items vertically */
+        }
+
+        /* Logo styling */
+        .logo h1 {
+            font-size: 24px;
+            /* Logo font size */
+        }
+
+        /* Navigation links section */
+        .class2 {
+            display: flex;
+            /* Show links horizontally */
+            gap: 20px;
+            /* Space between links */
+            /* height: 60px; */
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2%;
+        }
+
+        .dropdown-container {
+            display: flex;
+            gap: 25px;
+        }
+
+
+        .dropbtn {
+            background-color: transparent;
+            /* Button background */
+            border: none;
+            /* No border */
+            cursor: pointer;
+            /* Pointer cursor on hover */
+            font-size: 16px;
+            /* Font size */
+            padding: 10px;
+            /* Padding for button */
+        }
+
+        /* Dropdown content styling */
+        .dropdown-content {
+            display: none;
+            /* Hidden by default */
+            position: absolute;
+            /* Positioned relative to the dropdown */
+            background-color: white;
+            /* Background color */
+            min-width: 100px;
+            /* Minimum width */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            /* Shadow for depth */
+            z-index: 1;
+            /* Layering */
+        }
+
+        /* Show dropdown content on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+            /* Show on hover */
+        }
+
+        /* Dropdown link styling */
+        .dropdown-content a {
+            display: block;
+            /* Block display for easy clicking */
+            padding: 10px;
+            /* Padding for links */
+            text-decoration: none;
+            /* No underline */
+            color: black;
+            /* Text color */
+        }
+
+        /* Change link color on hover */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            /* Hover effect */
+        }
+
+        /* Icons section */
+        .icon i {
+            margin-left: 20px;
+            /* Space between icons */
+            font-size: 20px;
+            /* Icon size */
+        }
+
+        /* Hamburger menu styling */
+        .hamburger {
+            display: none;
+            /* Hidden by default */
+            font-size: 24px;
+            /* Size of the hamburger icon */
+            cursor: pointer;
+            /* Pointer on hover */
+        }
+
+        .hamburger i {
+            color: #333;
+            /* Icon color */
+        }
+
+
+        input.nosubmit {
+            border: 1px solid #555;
+            width: 100%;
+            padding: 9px 4px 9px 40px;
+            background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+
+        }
+
+        input[type="search"] {
+            margin: 0;
+            font-size: 14px;
+            color: inherit;
+            border-radius: inherit;
+
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+
+            .hamburger {
+                display: block;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            /* Hide nav links by default */
+            .class2 {
+                display: none;
+                /* Hide navigation by default */
+                flex-direction: column;
+                /* Stack links vertically */
+                position: absolute;
+                /* Position absolutely */
+                top: 100px;
+                /* Position below the navbar */
+                left: 0;
+                /* Align to the left */
+                /* right: 0;  */
+                /* Stretch to the right */
+                background-color: white;
+                /* Background color */
+                z-index: 1;
+                /* Layering */
+                align-items: start;
+            }
+
+
+            input[type="checkbox"]:checked~.class2 {
+                display: flex;
+            }
+
+            .dropdown-container {
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <!-- Hamburger menu (appears on smaller screens) -->
+            <label for="menu-toggle" class="hamburger"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="menu-toggle" style="display: none;">
+            <!-- Logo section -->
+            <div class="class1">
+                <div class="logo">
+                    <h1>FABLESTREET</h1>
+                </div>
+            </div>
+
+            <!-- Navigation links section (class2) -->
+            <div class="class2">
+
+
+
+                <div class="dropdown-container">
+                    <div class="dropdown">
+                        <button class="dropbtn">Shop</button>
+                        <div class="dropdown-content">
+                            <a href="#">Bestseller</a>
+                            <a href="#">workwear</a>
+                            <a href="#">Livln Pants</a>
+                            <a href="#">Tops & Shirts</a>
+                            <a href="#">Dresses</a>
+                            <a href="#">Tousers</a>
+                            <a href="#">Co-ords</a>
+                            <a href="#">Blazers</a>
+                            <a href="#">Tees</a>
+                            <a href="#">Jeans & Denims</a>
+                            <a href="#">Skirts,Skorts & shorts</a>
+                            <a href="#">Plus size</a>
+                            <a href="#">Camisoles</a>
+                            <a href="#">Special prices</a>
+                            <a href="#">Winter Clearance</a>
+                        </div>
+                    </div>
+
+                    <!--  -->
+                    <div class="dropdown">
+                        <button class="dropbtn">New</button>
+                        <div class="dropdown-content">
+                            <a href="#">FALL 2024</a>
+                            <a href="#">Shop by </a>
+                            <a href="#">View All</a>
+                            <a href="#"> Body Type</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Formals</button>
+                        <div class="dropdown-content">
+                            <a href="#">Formal Tops</a>
+                            <a href="#">Formal Bottoms</a>
+                            <a href="#">Formal Dresses</a>
+                            <a href="#">Blazers & co-ords</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Occasion</button>
+                        <div class="dropdown-content">
+                            <a href="#">Work</a>
+                            <a href="#">Casual</a>
+                            <a href="#">Going Out</a>
+                        </div>
+
+                        <button class="dropbtn">About Us</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="class4">
+                <div class="search-input">
+                    <input class="nosubmit" type="search" placeholder="Search...">
+                </div>
+            </div>
+
+            <!-- Icons section -->
+            <div class="class3">
+                <div class="icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <i class="fa-solid fa-rotate"></i>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </nav>
+</body>
+
+</html>
