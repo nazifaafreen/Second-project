@@ -6,208 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <style>
-        /* start nav */
+    <link rel="stylesheet" href="humber.css">
 
-        /* Basic styling for the navigation */
-        nav {
-            background-color: #fff;
-            /* Background color */
-            width: 100%;
-            /* Full width */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            /* Subtle shadow for depth */
-            position: relative;
-            /* Positioning context for dropdowns */
-        }
-
-        /* Container for navigation elements */
-        .container {
-            display: flex;
-            /* Flexbox for layout */
-            justify-content: space-between;
-            /* Space out elements */
-            align-items: center;
-            /* Center items vertically */
-            padding: 10px 20px;
-            /* Padding around the container */
-            height: 150px;
-        }
-
-        /* Flex container classes for logo, nav links, and icons */
-        .class1,
-        .class2,
-        .class3 {
-            display: flex;
-            /* Flexbox for alignment */
-            align-items: center;
-            /* Center items vertically */
-        }
-
-        /* Logo styling */
-        .logo h1 {
-            font-size: 24px;
-            /* Logo font size */
-        }
-
-        /* Navigation links section */
-        .class2 {
-            display: flex;
-            /* Show links horizontally */
-            gap: 20px;
-            /* Space between links */
-            /* height: 60px; */
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 2%;
-        }
-
-        .dropdown-container {
-            display: flex;
-            gap: 25px;
-        }
-
-
-        .dropbtn {
-            background-color: transparent;
-            /* Button background */
-            border: none;
-            /* No border */
-            cursor: pointer;
-            /* Pointer cursor on hover */
-            font-size: 16px;
-            /* Font size */
-            padding: 10px;
-            /* Padding for button */
-        }
-
-        /* Dropdown content styling */
-        .dropdown-content {
-            display: none;
-            /* Hidden by default */
-            position: absolute;
-            /* Positioned relative to the dropdown */
-            background-color: white;
-            /* Background color */
-            min-width: 100px;
-            /* Minimum width */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            /* Shadow for depth */
-            z-index: 1;
-            /* Layering */
-        }
-
-        /* Show dropdown content on hover */
-        .dropdown:hover .dropdown-content {
-            display: block;
-            /* Show on hover */
-        }
-
-        /* Dropdown link styling */
-        .dropdown-content a {
-            display: block;
-            /* Block display for easy clicking */
-            padding: 10px;
-            /* Padding for links */
-            text-decoration: none;
-            /* No underline */
-            color: black;
-            /* Text color */
-        }
-
-        /* Change link color on hover */
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-            /* Hover effect */
-        }
-
-        /* Icons section */
-        .icon i {
-            margin-left: 20px;
-            /* Space between icons */
-            font-size: 20px;
-            /* Icon size */
-        }
-
-        /* Hamburger menu styling */
-        .hamburger {
-            display: none;
-            /* Hidden by default */
-            font-size: 24px;
-            /* Size of the hamburger icon */
-            cursor: pointer;
-            /* Pointer on hover */
-        }
-
-        .hamburger i {
-            color: #333;
-            /* Icon color */
-        }
-
-
-        input.nosubmit {
-            border: 1px solid #555;
-            width: 100%;
-            padding: 9px 4px 9px 40px;
-            background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
-
-        }
-
-        input[type="search"] {
-            margin: 0;
-            font-size: 14px;
-            color: inherit;
-            border-radius: inherit;
-
-        }
-
-        /* Responsive design */
-        @media screen and (max-width: 768px) {
-
-            .hamburger {
-                display: block;
-            }
-
-            h1 {
-                text-align: center;
-            }
-
-            /* Hide nav links by default */
-            .class2 {
-                display: none;
-                /* Hide navigation by default */
-                flex-direction: column;
-                /* Stack links vertically */
-                position: absolute;
-                /* Position absolutely */
-                top: 100px;
-                /* Position below the navbar */
-                left: 0;
-                /* Align to the left */
-                /* right: 0;  */
-                /* Stretch to the right */
-                background-color: white;
-                /* Background color */
-                z-index: 1;
-                /* Layering */
-                align-items: start;
-            }
-
-
-            input[type="checkbox"]:checked~.class2 {
-                display: flex;
-            }
-
-            .dropdown-container {
-                display: flex;
-                flex-direction: column;
-
-            }
-        }
-    </style>
 </head>
 
 <body>
+    <header>
+        <div class="container1">
+            <h2>Shop our newest style!!</h2>
+        </div>
+    </header>
     <nav>
         <div class="container">
             <!-- Hamburger menu (appears on smaller screens) -->
@@ -275,10 +83,10 @@
                             <a href="#">Going Out</a>
                         </div>
 
-                        <button class="dropbtn">About Us</button>
 
                     </div>
                 </div>
+                <button class="dropbtn">About Us</button>
             </div>
             <div class="class4">
                 <div class="search-input">
@@ -297,13 +105,570 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
     </nav>
+    <div id="slider">
+        <figure>
+            <img src="images/festival.webp">
+            <img src="images/workwear.webp">
+            <img src="/images/confidence.webp">
+        </figure>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="circle">
+        <div class="slide1">
+            <div class="box1box">
+                <img src="images/circle-1.jpg">
+                <h2>Living</h2>
+            </div>
+            <div class="box1box">
+                <img src="images/circle-2.jpg">
+                <h2>Dress</h2>
+            </div>
+            <div class="box1box">
+                <img src="images/circle-3.jpg">
+                <h2>Tops</h2>
+            </div>
+            <div class="box1box">
+                <img src="images/circle-4.jpg">
+                <h2>Shirt</h2>
+            </div>
+            <div>
+                <img src="images/circle-5.jpg">
+                <h2>Tousers</h2>
+            </div>
+            <div>
+                <img src="images/circle-6.jpg">
+                <h2>Skirts</h2>
+            </div>
+            <div>
+                <img src="images/circle-7.jpg">
+                <h2>Blazers</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="Dress">
+        <div class="image-2">
+            <img src="/images/Bestsellers.jpg">
+            <img src="/images/must-have knits.jpg">
+            <img src="/images/am to pm outfit.webp">
+            <img src="/images/evening wear.jpg">
+        </div>
+    </div>
+
+    <div class="variety">
+        <div class="head">
+            <h4>Shop by Occasion</h4>
+        </div>
+        <div class="pagination-container"></div>
+        <!-- Radio buttons for pagination -->
+        <input type="radio" name="pagination" id="page1" checked>
+        <input type="radio" name="pagination" id="page2">
+        <input type="radio" name="pagination" id="page3">
+
+        <!-- Labels for pagination -->
+        <div class="pagination-controls">
+            <div class="page">
+                <label for="page1">Casual</label>
+                <label for="page2">Formal</label>
+                <label for="page3">Evening Wear</label>
+            </div>
+        </div>
+        <div class="content">
+            <div class="page-content" id="content1">
+                <div class="image-3">
+
+                    <div class="img1page">
+                        <div class="product-img-1">
+
+                            <img src="/images/casual img 1.jpg" alt="front product image">
+                            <img src="/images/nazif img1.webp" alt="rear product image" class="rear-img-1">
+                            <p>Wide Legged Jeans-Navy Blue</p>
+                            <p>$2,795 <strike>$3,495</strike><span class="span">20% OFF</span></p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="img1page">
+                        <div class="product-img-1">
+
+                            <img src="/images/casual img 2.jpg" alt="front product image">
+                            <img src="/images/nazif img-2.jpeg" alt="rear product image" class="rear-img-1">
+                            <p>Floral A-Line Dress-Blue</p>
+                            <p>$2,845 <strike>$3,795</strike><span class="span">25% OFF</span></p>
+
+                        </div>
+
+                    </div>
+                    <div class="img1page">
+                        <div class="product-img-1">
+
+                            <img src="/images/casual img 3.jpg" alt="front product image">
+                            <img src="/images/nazif img3.webp" alt="rear product image" class="rear-img-1">
+                            <p> Collared Livln T-Shirt-Black</p>
+                            <p>$1,195 <strike>$1,495</strike><span class="span">20% OFF</span></p>
+
+                        </div>
+
+                    </div>
+                    <div class="img1page">
+                        <div class="product-img-1">
+
+                            <img src="/images/casual img 4.jpg" alt="front product image">
+                            <img src="/images/nazif img4.webp" alt="rear product image" class="rear-img-1">
+                            <p>Bodycon Knitted Dress-Navy Blue</p>
+                            <p>$2,235 <strike>$2,795</strike><span class="span">20% OFF</span></p>
+
+
+                        </div>
+
+                    </div>
+                    <div class="img1page">
+                        <div class="product-img-1">
+
+                            <img src="/images/casual img 5.jpg" alt="front product image">
+                            <img src="/images/nazif img5.webp" alt="rear product image" class="rear-img-1">
+                            <p>LivIn Skinny Pants - Black</p>
+                            <p>$2,155 <strike>$2,695</strike><span class="span">20% OFF</span></p>
+
+                        </div>
+
+                    </div>
+                    <div class="img1page">
+                        <div class="product-img-1">
+
+                            <img src="/images/casual img 6.jpg" alt="front product image">
+                            <img src="/images/nazif img6.webp" alt="rear product image" class="rear-img-1">
+                            <p>Linen Front Overlap Skort - Dusty Pink</p>
+                            <p>$2,495 <strike>$3,795</strike><span class="span">10% OFF</span></p>
+
+                        </div>
+
+                    </div>
+                    <div class="img1page">
+                        <div class="product-img-1">
+
+                            <img src="/images/casual img 7.jpg" alt="front product image">
+                            <img src="/images/nazif img7.webp" alt="rear product image" class="rear-img-1">
+                            <p>Band Collar Top - Yellow</p>
+                            <p>$1,895 </p>
+
+                        </div>
+
+                    </div>
+                    <div class="img1page">
+                        <div class="product-img-1">
+
+                            <img src="/images/casual img 8.jpg" alt="front product image">
+                            <img src="/images/nazif img8.webp" alt="rear product image" class="rear-img-1">
+                            <p>Cutout Detail Dress - Blue</p>
+                            <p>$3,035 <strike>$3,795</strike><span class="span">20% OFF</span></p>
+
+                        </div>
+
+                    </div>
+                    <div class="img1page">
+                        <div class="product-img-1">
+
+                            <img src="/images/casual img 9.jpg" alt="front product image">
+                            <img src="/images/nazif img9.webp" alt="rear product image" class="rear-img-1">
+                            <p>Flared Skort With Panel Detail - Black</p>
+                            <p>$1,595 <strike>$1,995</strike><span class="span">20% OFF</span></p>
+
+                        </div>
+
+                    </div>
+                    <div class="img1page">
+                        <div class="product-img-1">
+
+                            <img src="/images/casual img 10.jpg" alt="front product image">
+                            <img src="/images/nazif img10.webp" alt="rear product image" class="rear-img-1">
+                            <p>Sylvie Shoulder Bag</p>
+                            <p>$2,845 <strike>$3,795</strike><span class="span">10% OFF</span></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="page-content" id="content2">
+                <div class="image-3">
+
+                    <div class="img1page">
+                        <div class="product-img-1">
+
+                            <img src="/images/formal img 1.jpg" alt="front product image">
+                            <img src="/images/afreen img-1.webp" alt="rear product image" class="rear-img-1">
+                            <p>Striped Fit And Flare Dresses</p>
+                            <p>$3,115<strike>$3,895</strike> <span>20% OFF</span></p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="img1page">
+                        <div class="product-img-1">
+
+                            <img src="/images/formal img 2.jpg" alt="front product image">
+                            <img src="/images/afreen img2.webp" alt="rear product image" class="rear-img-1">
+                            <p>Cowl Neck Top-White</p>
+                            <p>$1,515<strike>$1,895</strike> <span>20% OFF</span></p>
+
+                        </div>
+
+                    </div>
+                    <div class="img1page">
+                        <div class="product-img-1">
+
+                            <img src="/images/formal img 3.jpg" alt="front product image">
+                            <img src="/images/afreen img-3.webp" alt="rear product image" class="rear-img-1">
+                            <p>Satin Stripes Shirt-Blue</p>
+                            <p>$1,515<strike>$1,895</strike> <span>20% OFF</span></p>
+
+                        </div>
+
+                    </div>
+                    <div class="img1page">
+                        <div class="product-img-1">
+                            <img src="/images/formal img 4.jpg" alt="front product image">
+                            <img src="/images/afreen img-4.webp" alt="rear product image" class="rear-img-1">
+                            <p>Fornt Button Vest-Navy Blue</p>
+                            <p>$2,395 <strike>$2,995</strike><span class="span">20% OFF</span></p>
+                        </div>
+
+                    </div>
+                    <div class="img1page">
+                        <div class="product-img-1">
+
+                            <img src="/images/formal img 5.jpg" alt="front product image">
+                            <img src="/images/afreen img-5.webp" alt="rear product image" class="rear-img-1">
+                            <p>Straight Fit Skirt-Black And White</p>
+                            <p>$2,235<strike>2,795</strike> <span class="span">20% OFF</span></p>
+
+                        </div>
+
+                    </div>
+                    <div class="img1page">
+                        <div class="product-img-1">
+
+                            <img src="/images/formal img 6.jpg" alt="front product image">
+                            <img src="/images/formal img 6 (1).jpg" alt="rear product image" class="rear-img-1">
+                            <p>Cotton Linen Pleate Top-Beige</p>
+                            <p>$2,075 <strike>$2,595</strike><span class="span">20% OFF</span></p>
+
+                        </div>
+
+                    </div>
+                    <div class="img1page">
+                        <div class="product-img-1">
+
+                            <img src="/images/formal img 7.jpg" alt="front product image">
+                            <img src="/images/afreen img-6.webp" alt="rear product image" class="rear-img-1">
+                            <p>Cotton Linen Pleate Top-Beige</p>
+                            <p>$2,075 <strike>$2,595</strike><span class="span">20% OFF</span></p>
+
+                        </div>
+
+                    </div>
+                    <div class="img1page">
+                        <div class="product-img-1">
+
+                            <img src="/images/formal img 8.jpg" alt="front product image">
+                            <img src="/images/afreen img-7.webp" alt="rear product image" class="rear-img-1">
+                            <p>Wide Leg High Rise Trouserss-Fuchsia</p>
+                            <p>$2,095 <strike>$2,995</strike> <span class="span">30% OFF</span></p>
+
+                        </div>
+
+                    </div>
+                    <div class="img1page">
+                        <div class="product-img-1">
+                            <img src="/images/formal img 9.jpg" alt="front product image">
+                            <img src="/images/afreen img-8.webp" alt="rear product image" class="rear-img-1">
+                            <p>Linin Bootcut Pants-Black</p>
+                            <p>$2,155 <strike>$2,695</strike> <span class="span">20% OFF</span></p>
+
+                        </div>
+
+                    </div>
+                    <div class="img1page">
+                        <div class="product-img-1">
+
+                            <img src="/images/formal img 11.jpg" alt="front product image">
+                            <img src="/images/afreen img-10.webp" alt="rear product image" class="rear-img-1">
+                            <p>Linin cotton T-shirt-Black</p>
+                            <p>$2,155 <strike>$2,695</strike> <span class="span">20% OFF</span></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="page-content" id="content3">
+                <div class="image-3">
+                    <div class="top">
+                        <img src="images/evening wear  img 1.jpg" alt="Wide Legged Jeans - Navy Blue">
+                        <p>One Shoulder Dress-White</p>
+                        <p>$3,745 <strike>$4,995</strike> <span>25% OFF</span></p>
+                    </div>
+                    <div class="top">
+                        <img src="/images/evening wear img 2.jpg" alt="Floral A-line Dress - Blue">
+                        <p>Bodycorn Knitted Dress-Black</p>
+                        <p>$2,875<strike>$3,195</strike> <span class="span">10% OFF</span></p>
+                    </div>
+                    <div class="top">
+                        <img src="images/evening wear  img 3.jpg" alt="4 Way Stretch T-shirt - Black">
+                        <p>Satin Cowl Neck Dress-Navy Blue</p>
+                        <p>$2,795<strike>$3,495</strike> <span>20% OFF</span></p>
+                    </div>
+                    <div class="top">
+                        <img src="images/evening wear img 4.jpg">
+                        <p>Gathered Detail Top-White </p>
+                        <p>$1,345 <strike>$1,495</strike><span class="span">10% OFF</span></p>
+                    </div>
+                    <div class="top">
+                        <img src="images/evening_wear__img_5-removebg-preview.png">
+                        <p>Flora Print Band Neck Top</p>
+                        <p>$1,915 <strike>$2,395</strike> <span class="span">20% OFF</span></p>
+                    </div>
+                    <div class="top">
+                        <img src="images/evening wear img 6.jpg">
+                        <!-- <img src="images/hover img1.webp" alt="rear product imag"> -->
+                        <p>Satin Collared Shirt-Royal Blue</p>
+                        <p>$1,955 <strike>2,795</strike><span class="span">30% OFF</span> </p>
+                    </div>
+                    <div class="top">
+                        <img src="images/evening wear  img 7.jpg">
+                        <p>Satin Cowl Neck Slip Dress-Olive</p>
+                        <p>$2,635 <strike>$3,295</strike><span class="span">20% OFF</span></p>
+                    </div>
+                    <div class="top">
+                        <img src="images/evening wear  img 8.jpg">
+                        <p>Satin Marble Print Dress-Blue</p>
+                        <p>$2,795 <strike>$3,495</strike> <span class="span">20% OFF</span></p>
+                    </div>
+                    <div class="top">
+                        <img src="images/evening wear  img 9.jpg">
+                        <p>Satin Floral Print Dress- Black</p>
+                        <p>$3,455 <strike>$4,395</strike> <span class="span">10% OFF</span></p>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="arrival">
+        <div class="image-4">
+            <img src="/images/New arrivals.jpg">
+        </div>
+    </div>
+    <div class="color">
+        <div class="season">
+            <img src="/images/colour season.jpg">
+            <img src="/images/layering.jpg">
+            <img src="/images/season.jpg">
+        </div>
+    </div>
+    <div class="stores">
+        <div class="image-5">
+            <img src="/images/stores.gif">
+        </div>
+    </div>
+    <div class="head-2">
+        <h1>popular this week</h1>
+    </div>
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            <div class="slide-item">
+                <img src="images/popular week.jpg" alt="Product 1">
+                <p>Wide Leg High Rise Touserss</p>
+                <p>$2,095 <strike>$2,995</strike> <span class="span-2">30% OFF</span></p>
+            </div>
+            <div class="slide-item">
+                <img src="images/popular week.2.jpg" alt="Product 2">
+                <p>Raglan Sleeves Top-Blue</p>
+                <p>$1,555 <strike>$2,395</strike> <span class="span-2">35% OFF</span></p>
+            </div>
+            <div class="slide-item">
+                <img src="images/popular week.3.jpg" alt="Product 3">
+                <p>Floral Tiered Dress-Yellow</p>
+                <p>$2,875 <strike>$3,195</strike> <span class="span-2">10% OFF</span></p>
+            </div>
+            <div class="slide-item">
+                <img src="images/popular week.4.jpg" alt="Product 4">
+                <p>Floral Tiered Dress-Off White</p>
+                <p>$3,375 <strike>$4,495</strike> <span class="span-2">25% OFF</span></p>
+            </div>
+            <div class="slide-item">
+                <img src="images/popular week.5.jpg" alt="Product 5">
+                <p>Striped Knitted Midi Dress</p>
+                <p>$2,635 <strike>$3,295</strike> <span class="span-2">20% OFF</span></p>
+            </div>
+            <div class="slide-item">
+                <img src="images/popular week.6.jpg" alt="Product 6">
+                <p>Satin Cowl Neck Camisole-Grey</p>
+                <p>$1,595 <strike>$1,995</strike><span class="span-2">20% OFF</span></p>
+            </div>
+            <div class="slide-item">
+                <img src="images/popular week.7.jpg" alt="Product 6">
+                <p>Cotton Poplin Top-Orange</p>
+                <p>$2,9095 <strike>$2,795</strike> <span class="span-2">25% OFF</span></p>
+            </div>
+            <div class="slide-item">
+                <img src="images/popular week.8.jpg" alt="Product 6">
+                <p>Geometric Print A-Line Skirt-Pink</p>
+                <p>$1,770 <strike>$2,495</strike> <span class="span-2">29% OFF</span></p>
+            </div>
+            <div class="slide-item">
+                <img src="images/popular week.9.jpg" alt="Product 6">
+                <p>Floral Knitted T-Shirt-Blue And White</p>
+                <p>$1,525 <strike>$1,695</strike> <span class="span-2">10% OFF</span></p>
+            </div>
+            <div class="slide-item">
+                <img src="images/popular week.10.jpg" alt="Product 6">
+                <p>Colour Block Half Sleeves Top-BLack</p>
+                <p>$1,325 <strike>$1,895</strike><span class="span-2">30% OFF</span></p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="best">
+        <marquee>Best FITS For Indian Women</marquee>
+    </div>
+
+    <div class="fable">
+        <div class="image-7">
+            <img src="/images/fablestreet for indian women.jpg">
+        </div>
+    </div>
+    <div class="women">
+        <div class="slider-container"></div>
+        <div class="slider" id="slider">
+            <div class="slide-item">
+                <img src="images/fablestreet women1.jpg" alt="Product 1">
+                <h2 class="h-2">Pallavi</h2>
+                <p>My work day gets very hectic at times. So comfort is a non-negotiable thing for me. But I am so happy
+                    to find this perfect work style from FableStreet</p>
+            </div>
+            <div class="slide-item">
+                <img src="images/fablestreet women2.jpg" alt="Product 2">
+                <h2 class="h-2">Ananya</h2>
+                <p>I just had to share how much I'm loving FableStreet's range! Recently, I got this halter neck co-ord
+                    set and now this is my go-to pick.</p>
+            </div>
+            <div class="slide-item">
+                <img src="images/fablestreet women3.jpg" alt="Product 3">
+                <h2 class="h-2">Kirti</h2>
+                <p>I fell in love with this dress the moment I tried it on. It fits like a dream and makes me feel
+                    fabulous.</p>
+            </div>
+            <div class="slide-item">
+                <img src="images/fablestreet women4.jpg" alt="Product 4">
+                <h2 class="h-2"> Akshita</h2>
+                <p>The FIT!!! That's what I love about this brand. Just look at this skirt and top, so flattering and
+                    beautiful. Trust me, you'll love it too!</p>
+            </div>
+            <div class="slide-item">
+                <img src="images/fablestreet women5.jpg" alt="Product 5">
+                <h2 class="h-2">Deepa</h2>
+                <p>I absolutely loved this co-ord set! The fit is perfect and comfortable. FableStreet has quickly
+                    become my go-to brand.</p>
+            </div>
+            <div class="slide-item">
+                <img src="images/fablestreet women6.jpg" alt="Product 6">
+                <h2 class="h-2">Ritika</h2>
+                <p> This pink dress has become my favourite summer staple these days. Loving the colour and print.</p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    <hr>
+    <section>
+        <footer>
+            <div class="men">
+                <div class="shop2">
+                    <h3>Shop</h3>
+                    <div class="p2">
+                        <p>Tops & Shirts</p>
+                        <p>Dresses</p>
+                        <p>Tees</p>
+                        <p>Trousers</p>
+                        <p>Living</p>
+                        <p>Skorts</p>
+                        <p>Denim</p>
+                        <p>Gift Card</p>
+                    </div>
+                </div>
+                <div class="about">
+                    <h3>About</h3>
+                    <div class="p2">
+                        <p>Why we Exits</p>
+                        <p>Decoding the Best Fit</p>
+                        <p>Living-The Limitless Pants</p>
+                        <p>FS Life-A House of Brands</p>
+                        <p>Fablestreet X</p>
+                        <p>Store Locator</p>
+                        <p>Blogs</p>
+                    </div>
+                </div>
+                <div class="help">
+                    <h3>Help</h3>
+                    <div class="p2">
+                        <p>FAQs</p>
+                        <p>Privacy</p>
+                        <p>Shipping Policy</p>
+                        <p>Return & Exchange Policy</p>
+                        <p>Terms & Conditions</p>
+                        <p>Return/Exchange</p>
+                        <p>Sitemap</p>
+                    </div>
+                </div>
+                <div class="street">
+                    <h1>FableStreet</h1>
+                    <div class="p2">
+                        <p>2024 Fablestreet.com
+                            All Right Reserved
+                        </p>
+                        <h3>CONTACT US</h3>
+                        <P>Ph No:01143078400</P>
+                        <p>Fablestreet Lifestyle Solutions Private Limited <br> 362,phase ll,Udyog Vihar,Sector 20,<br>
+                            Gurugram,Haryana 122016</p>
+                        <p>Timings:10AM to 7PM,Mon to Sat</p>
+                    </div>
+                </div>
+            </div>
+            <div class="end">
+                <p>Re-Designed by <strong>V.Nazifa Afreen</strong></p>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+
+
+
 </body>
 
 </html>
