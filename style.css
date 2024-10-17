@@ -769,7 +769,7 @@ h4 {
     }
 
 }
-@media only screen and (min-width:768px)and(max-width:991){
+@media only screen and (max-width:768px){
     .slide1 {
         flex-wrap: wrap;
         justify-content: center;
@@ -781,11 +781,16 @@ h4 {
         flex-wrap: wrap;
     }
     .image-2 img{
-        width: 100%;
+        width: 45%;
     }
+       
     .color .season {
-        flex-wrap: wrap;
-    }
+          
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0;
+        }
     
     .color {
         width: 100%;
