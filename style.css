@@ -341,7 +341,7 @@ input[type="search"] {
 
 .Dress .image-2 {
     display: flex;
-    gap: 29px;
+    gap: 2%;
     justify-content: center;
     align-items: center;
 }
@@ -418,8 +418,8 @@ span {
 .color .season {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    /* padding: 35px; */
+    gap: 2%;
+    
 }
 
 .head-2 {
