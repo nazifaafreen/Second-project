@@ -347,7 +347,7 @@ input[type="search"] {
 }
 
 .Dress .image-2 img {
-    height: 315px;
+    height: 300px;
 
 }
 
@@ -357,6 +357,9 @@ h4 {
     margin-top: 30px;
     margin-bottom: 5px;
 
+}
+.head{
+    margin-top: 4px;
 }
 
 .shop {
