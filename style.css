@@ -5,94 +5,52 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav.navbar {
-    display: flex;
-}
-
-.navigation {
-    display: flex;
-}
-
-.navigation li {
-    list-style: none;
 
 
-}
-
-.icon {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    font-size: 25px;
-}
-
-input.nosubmit {
-    border: 1px solid #555;
-    width: 100%;
-    padding: 9px 4px 9px 40px;
-    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
-
-}
-
-input[type="search"] {
-    margin: 0;
-    font-size: 14px;
-    color: inherit;
-    border-radius: inherit;
-
-}
 
 
-/* start nav */
 
-/* Basic styling for the navigation */
+
 nav {
     background-color: #fff;
-    /* Background color */
+
     width: 100%;
-    /* Full width */
+
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
+
     position: relative;
-    /* Positioning context for dropdowns */
+
 }
 
-/* Container for navigation elements */
+
 .container {
     display: flex;
-    /* Flexbox for layout */
-    justify-content: space-between;
-    /* Space out elements */
     align-items: center;
-    /* Center items vertically */
+
     padding: 10px 20px;
-    /* Padding around the container */
+
     height: 90px;
 }
 
-/* Flex container classes for logo, nav links, and icons */
 .class1,
 .class2,
 .class3 {
     display: flex;
-    /* Flexbox for alignment */
+
     align-items: center;
-    /* Center items vertically */
+
 }
 
-/* Logo styling */
 .logo h1 {
     font-size: 24px;
-    /* Logo font size */
+
 }
 
-/* Navigation links section */
 .class2 {
     display: flex;
-    /* Show links horizontally */
+
     gap: 20px;
-    /* Space between links */
-    /* height: 60px; */
+
     width: 50%;
     justify-content: center;
     flex-wrap: wrap;
@@ -101,92 +59,97 @@ nav {
 
 .dropdown-container {
     display: flex;
-   
+
 }
 
 
 .dropbtn {
     background-color: transparent;
-    /* Button background */
+
     border: none;
-    /* No border */
+
     cursor: pointer;
-    /* Pointer cursor on hover */
+
     font-size: 16px;
-    /* Font size */
+
     padding: 10px;
-    /* Padding for button */
+
 }
 
-/* Dropdown content styling */
+
 .dropdown-content {
     display: none;
-    /* Hidden by default */
+
     position: absolute;
-    /* Positioned relative to the dropdown */
+
     background-color: white;
-    /* Background color */
+
     min-width: 100px;
-    /* Minimum width */
+
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    /* Shadow for depth */
+
     z-index: 1;
-    /* Layering */
+
 }
 
-/* Show dropdown content on hover */
+
 .dropdown:hover .dropdown-content {
     display: block;
-    /* Show on hover */
+
+
+}
+.dropdown:hover{
+    border-bottom: 2px solid;
 }
 
-/* Dropdown link styling */
+
 .dropdown-content a {
     display: block;
-    /* Block display for easy clicking */
+
     padding: 10px;
-    /* Padding for links */
+
     text-decoration: none;
-    /* No underline */
+
     color: black;
-   
+
 }
 
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
-   
+
 }
 
 
 .icon i {
     margin-left: 20px;
-   
+
     font-size: 20px;
-   
+
 }
 
 
 .hamburger {
     display: none;
-   
+
     font-size: 24px;
-    
+
     cursor: pointer;
-    
+
 }
 
 .hamburger i {
     color: #333;
-   
+
 }
+
 .container1 {
     background-color: black;
 
     text-align: center;
     color: white;
     font-size: 9px;
-    padding: 5px;
+    padding: 10px;
 }
 
 input.nosubmit {
@@ -206,7 +169,11 @@ input[type="search"] {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px)  {
+
+    .container {
+        justify-content: space-around;
+    }
 
     .hamburger {
         display: block;
@@ -216,22 +183,25 @@ input[type="search"] {
         text-align: center;
     }
 
-   
+
     .class2 {
         display: none;
-      
+
         flex-direction: column;
-      
+
         position: absolute;
-        
-        top: 100px;
-        left: 0;
-      
+
+        top: 55px;
+        left: 20px;
+
         background-color: white;
-       
+
         z-index: 1;
-        
+        justify-content: center;
+
         align-items: start;
+        width: 20%;
+
     }
 
 
@@ -245,10 +215,10 @@ input[type="search"] {
 
     }
 
-   
+
     .class3 .icon i:nth-child(n+3) {
         display: none;
-       
+
     }
 
     .class4 {
@@ -358,8 +328,9 @@ h4 {
     margin-bottom: 5px;
 
 }
+
 .head {
- 
+
     margin-top: 30px;
 }
 
@@ -407,7 +378,7 @@ span {
 .image-5 img,
 .image-7 img {
     width: 100%;
-    padding: 15px;
+
 }
 
 .color .season img {
@@ -418,8 +389,8 @@ span {
 .color .season {
     display: flex;
     justify-content: center;
-    gap: 2%;
-    
+    gap: 1%;
+
 }
 
 .head-2 {
@@ -565,7 +536,7 @@ input[type="radio"] {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    /* margin-bottom: 10px; */
+
 }
 
 .top figcaption {
@@ -576,7 +547,7 @@ input[type="radio"] {
 
 .top figcaption span {
     color: rgb(83, 5, 5);
-    /* font-weight: bold; */
+
 }
 
 
@@ -629,7 +600,8 @@ img.rear-img-1 {
 }
 
 .best {
-    font-size: 60px;
+    font-size: 50px;
+    margin: 5% 0;
 }
 
 .slider-container {
@@ -651,7 +623,7 @@ img.rear-img-1 {
 .slide-item {
     flex: 0 0 16.66%;
     text-align: center;
-    
+
     scroll-snap-align: start;
 }
 
@@ -683,10 +655,8 @@ h4 {
 }
 
 
-@media only screen and (max-width:767px) {
-    nav.navbar {
-        display: none;
-    }
+@media only screen and (max-width:767px) and (min-width:300px) {
+
 
     .slide1 {
         flex-wrap: wrap;
@@ -708,11 +678,13 @@ h4 {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 0;
+        justify-content: space-around;
     }
 
     .color .season img {
-        height: 195px;
-        width: 135px;
+        height: 180px;
+        width: 125px;
+        object-fit: cover;
     }
 
     .product-img-1 img {
@@ -738,6 +710,7 @@ h4 {
     #slider img {
         height: 210px;
         width: 140px;
+        object-fit: cover;
     }
 
     .slide-item #slider {
@@ -769,30 +742,75 @@ h4 {
     }
 
 }
-@media only screen and (max-width:768px){
+
+@media only screen and (max-width:992px) and (min-width:768px) {
     .slide1 {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .circle img {
         width: 100%;
     }
+
     .Dress .image-2 {
         flex-wrap: wrap;
     }
-    .image-2 img{
+
+    .image-2 img {
         width: 45%;
     }
-       
+
     .color .season {
-          
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 0;
-        }
-    
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+
+
     .color {
         width: 100%;
     }
+    p{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1200px){
+    .slide1 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Dress .image-2 img {
+        width: 22%;
+        object-fit: cover;
+
+    }
+
+    .Dress .image-2 {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .class2{
+        width: 40%;
+    }
+
+    .season {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .color .season img {
+        height: 300px;
+        width: 245px;
+        object-fit: cover;
+    }
+}
+@media only scree and (max-width:2000px) and (min-width:1400px){
+
 }
