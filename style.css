@@ -112,7 +112,7 @@ nav {
 
     color: black;
 
-}
+}F
 
 
 .dropdown-content a:hover {
@@ -379,6 +379,10 @@ span {
 .image-7 img {
     width: 100%;
 
+}
+.stores{
+    width: 80%;
+    margin: auto;
 }
 
 .color .season img {
@@ -768,13 +772,15 @@ h4 {
         justify-content: center;
         gap: 0;
     }
-
+  .men{
+    flex-wrap: wrap;
+  }
 
     .color {
         width: 100%;
     }
     p{
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
