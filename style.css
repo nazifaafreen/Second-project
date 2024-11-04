@@ -388,28 +388,36 @@ span {
     /* width: 237px; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: #efefef;
+    justify-content: center;
+    gap: 5%;
+    /* justify-content: space-evenly;
+    background-color: #efefef; */
 }
 .card2 {
     text-align: center;
-    width: 150px;
-    height: 260px;
+    width: 300px;
+    height: 200px;
     align-content: center;
+    background-color:gainsboro;
+    margin: 10px;
 
 }
 .card3 {
     text-align: center;
-    width: 175px;
-    height: 260px;
+    width: 300px;
+    height: 200px;
     align-content: center;
+    background-color: gainsboro;
+    margin: 10px;
 
 }
 .card4 {
     text-align: center;
-    width: 165px;
-    height: 260px;
+    width: 300px;
+    height: 200px;
     align-content: center;
+    background-color: gainsboro;
+    margin: 10px;
 
 }
 
@@ -798,6 +806,12 @@ h4 {
 
     .image-2 img {
         width: 45%;
+    }
+    .card2 ,.card3 ,.card4{
+        width: 220px;
+    }
+    .image-7{
+        gap: 1%;
     }
 
     .color .season {
