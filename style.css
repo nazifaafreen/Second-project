@@ -207,6 +207,7 @@ input[type="search"] {
 
     input[type="checkbox"]:checked~.class2 {
         display: flex;
+        width: 135px;
     }
 
     .dropdown-container {
@@ -369,9 +370,34 @@ figure {
     flex-direction: row;
 }
 
-span {
+.image-3 span {
     padding: 2px;
     color: rgb(156, 8, 8);
+}
+.slider-container p {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 22px;
+    padding: 5px;
+    color: #302d2d;
+}
+.slider-container span{
+    padding: 2px;
+    color: rgb(156, 8, 8);
+}
+.image-3 p {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 22px;
+    padding: 5px;
+    color: #302d2d;
+}
+.women p {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 22px;
+    padding: 5px;
+    color: #302d2d;
 }
 
 .image-4 img,
@@ -379,53 +405,140 @@ span {
     width: 100%;
 
 }
-.card-img img {
-    width: 60px;
-    border: 2px solid;
-    border-radius: 50%;
-}
-.image-7 {
-    /* width: 237px; */
+
+
+
+
+.store-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5%;
-    /* justify-content: space-evenly;
-    background-color: #efefef; */
-}
-.card2 {
-    text-align: center;
-    width: 300px;
-    height: 200px;
-    align-content: center;
-    background-color:gainsboro;
-    margin: 10px;
-
-}
-.card3 {
-    text-align: center;
-    width: 300px;
-    height: 200px;
-    align-content: center;
-    background-color: gainsboro;
-    margin: 10px;
-
-}
-.card4 {
-    text-align: center;
-    width: 300px;
-    height: 200px;
-    align-content: center;
-    background-color: gainsboro;
-    margin: 10px;
-
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.stores {
-    width: 100%;
-
-    margin: auto;
+/* Store image */
+.store-image {
+    flex: 1 1 60%;
+    max-width: 600px;
     padding: 10px;
+}
+
+/* Store image styling */
+.store-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Store text section */
+.store-text {
+    flex: 1 1 40%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+}
+
+.store-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Changing text animation */
+.changing-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 1.5em; /* Adjust height to avoid content shift */
+}
+
+/* Style for each text element */
+.text {
+    position: absolute;
+    opacity: 0;
+    animation: changeText 6s forwards;
+}
+
+/* Animation to change text */
+@keyframes changeText {
+    0%, 16.66% {
+        opacity: 1;
+    }
+    33.33%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Delay the animations for each text so they appear in sequence */
+.text:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.text:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.text:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.store-text button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Responsive Design for iPad and iPhone */
+@media (max-width: 1024px) {
+    .store-text h2 {
+        font-size: 1.8em;
+    }
+
+    .changing-text {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .store-container {
+        flex-direction: column;
+    }
+
+    .store-image {
+        max-width: 100%;
+    }
+
+    .store-text h2 {
+        font-size: 1.5em;
+    }
+
+    .changing-text {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .store-text h2 {
+        font-size: 1.2em;
+    }
+
+    .changing-text {
+        font-size: 0.9em;
+    }
+
+    .store-text button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
 }
 
 .color .season img {
@@ -461,7 +574,7 @@ span {
 
 .span-2 {
     padding: 2px;
-    color: rgb(156, 8, 8);
+    color:black;
 }
 
 .head-3 {
@@ -483,7 +596,7 @@ span {
     object-fit: cover;
 }
 
-p {
+ p {
     font-size: 15px;
     text-align: justify;
     line-height: 22px;
@@ -493,6 +606,43 @@ p {
 
 }
 
+.container2{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    margin: 25px;
+}
+
+.item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 315px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.item h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.item p {
+    font-size: 1em;
+    color: #555;
+    text-align: center;
+}
+
 .h-2 {
     padding: 5px;
     color: #363535;
@@ -500,6 +650,7 @@ p {
 
 
 }
+
 
 .men {
     display: flex;
@@ -513,8 +664,10 @@ h3 {
     padding: 10px;
 }
 
-h1 {
+.head-2 h1 {
     padding: 10px;
+    margin: 10px 0;
+    font-family: fangsong;
 }
 
 .pagination-container {
@@ -570,35 +723,6 @@ input[type="radio"] {
 
 
 
-.image-3 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-
-}
-
-
-.top img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-
-}
-
-.top figcaption {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.top figcaption span {
-    color: rgb(83, 5, 5);
-
-}
-
-
-
 .page {
     display: flex;
     justify-content: center;
@@ -608,9 +732,20 @@ input[type="radio"] {
 
 .image-3 img {
     height: 350px;
-    width: 250px;
+    /* width: 250px; */
     object-fit: cover;
+    width: 95%;
+    margin: auto;
 }
+.image-3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0px;
+    width: 95%;
+    margin: auto;
+}
+
 
 .img1page {
     background-color: white;
@@ -667,6 +802,7 @@ img.rear-img-1 {
     gap: 45px;
 }
 
+
 .slide-item {
     flex: 0 0 16.66%;
     text-align: center;
@@ -680,8 +816,9 @@ img.rear-img-1 {
 
 }
 
-h4 {
+.head h4 {
     margin: 10px 0;
+    font-family: fangsong;
 }
 
 .women {
@@ -700,10 +837,31 @@ h4 {
 .end {
     margin: 20px;
 }
+@media (max-width: 768px) {
+    
 
+    .container2 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    .item h2 {
+        font-size: 1.1em;
+    }
+
+    .item p {
+        font-size: 0.9em;
+    }
+    .p2 p {
+        text-align: center;
+    }
+}
 
 @media only screen and (max-width:767px) and (min-width:300px) {
-
 
     .slide1 {
         flex-wrap: wrap;
@@ -729,15 +887,16 @@ h4 {
     }
 
     .color .season img {
-        height: 180px;
-        width: 125px;
+       width: 80%;
         object-fit: cover;
+        margin: auto;
     }
 
     .product-img-1 img {
         height: 210px;
         width: 140px;
     }
+   
 
     .product-img-1 .rear-img-1 {
         width: 162px;
@@ -764,13 +923,16 @@ h4 {
         width: 150px;
 
     }
+    .store-container{
+        flex-direction: column;
+    }
 
     .men {
         flex-direction: column;
 
     }
 
-    p {
+    .image-3 .slider-container .women p {
         font-size: 15px;
         text-align: center;
     }
@@ -803,16 +965,20 @@ h4 {
     .Dress .image-2 {
         flex-wrap: wrap;
     }
-
+  .store-container{
+    flex-direction: row;
+  }
     .image-2 img {
         width: 45%;
     }
-    .card2 ,.card3 ,.card4{
-        width: 220px;
+   
+    .container2 {
+        flex-direction: row;        
     }
-    .image-7{
-        gap: 1%;
-    }
+         .item{
+            width: 31%;
+         }
+    
 
     .color .season {
 
@@ -821,6 +987,10 @@ h4 {
         justify-content: center;
         gap: 0;
     }
+    .p2 p {
+        text-align: justify;
+    }
+    
   .men{
     flex-wrap: wrap;
   }
