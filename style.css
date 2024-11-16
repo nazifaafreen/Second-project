@@ -207,7 +207,7 @@ input[type="search"] {
 
     input[type="checkbox"]:checked~.class2 {
         display: flex;
-        width: 135px;
+        width: 250px;
     }
 
     .dropdown-container {
